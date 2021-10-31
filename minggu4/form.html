@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+</head>
+<body>
+    <style>
+        label{
+            font-size: large;
+        }
+        table{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        body{
+            background-image: url(background.jpg);
+            background-size: cover;
+        }
+        h1{
+           text-align: center;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size: 30px;     
+        }
+    
+    </style>
+    <h1> FORM PPDB JALUR ZONASI TAHUN 2021 </h1>
+    <form action="proses.php" method="post" name="form" autocomplete="off">
+        <table>
+            <tr>
+                <td><P><b>INFO PENDAFTARAN</b></P></td>
+            </tr>
+            <tr>
+                <td><label for="nisn">NISN</label></td>
+                <td>:</td>
+                <td><input type="text" id="nisn" name= "nisn" required></td>
+            </tr>
+            <tr>
+                <td><label for="asal_skl">Asal Sekolah</label></td>
+                <td>:</td>
+                <td><input type="text" id="asal_skl" name="asal_skl" required></td>
+            </tr>
+            <tr>
+                <td><label for="tahun">Tahun Lulus</label></td>
+                <td>:</td>
+                <td><input type="text" id="tahun" name="tahun" required></td>
+            </tr>
+            <tr>
+                <td style="font-size: small; font-style: italic;">lampirkan fotocopy ijazah</td>
+                <td></td>
+                <td><input type="file" id="tahun" name="tahun" required></td>
+            </tr>
+            <tr>
+                <td><p><b>DATA CALON PESERTA</b></p></td>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td>:</td>
+                <td><input type="text" id="nama" name="nama" required><br></td>
+            </tr>
+            <tr>
+                <td><label for="nik">NIK</label></td>
+                <td>:</td>
+                <td><input type="text" id="nik" name="nik" required></td>
+            </tr>
+            <tr>
+                <td><label for="ttl">Tempat/Tanggal Lahir</label></td>
+                <td>:</td>
+                <td><input type="text" id="ttl" name="ttl" required>
+                    <input type="date" id="ttl" name="ttl" required>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size: small; font-style: italic;">lampirkan fotocopy akte kelahiran</td>
+                <td></td>
+                <td><input type="file" id="ttl" name="ttl" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td>:</td>
+                <td><input type="radio" id="gender" name="gender" value="Male" required>
+                    <label for="gender">Laki-Laki</label>
+                    <input type="radio" id="gender" name="gender" value="Female" required>
+                    <label for="gender">Perempuan</label></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td>:</td>
+                <td><input type="text" id="alamt" name="alamat" required></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="desa/kelurahan">Desa/Kelurahan</label></td>
+                <td>:</td>
+                <td><input type="text" name="desa/kelurahan" id="desa/kelurahan"required></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="kecamatan">Kecamatan</label></td>
+                <td>:</td>
+                <td><input type="text" id="kecamatan" name="kecamatan" required></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="kabupaten">Kabupaten</label></td>
+                <td>:</td>
+                <td><input type="text" id="kabupaten" name="kabupaten" required></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="provinsi">Provinsi</label></td>
+                <td>:</td>
+                <td>
+                    <select name="provinsi" id="provinsi" required>
+                        <option value="Provinsi">Pilih Provinsi</option>
+                        <option value="Nanggroe Aceh Darussalam">Nanggroe Aceh Darussalam</option>
+                        <option value="Sumatera Utara">Sumatera Utara</option>
+                        <option value="Sumatera Selatan">Sumatera Selatan</option>
+                        <option value="Sumatera Barat">Sumatera Barat</option>
+                        <option value="Bengkulu">Bengkulu</option>
+                        <option value="Riau">Riau</option>
+                        <option value="Kepulauan Riau">Kepulauan Riau</option>
+                        <option value="Jambi">Jambi</option>
+                        <option value="Lampung">Lampung</option>
+                        <option value="Bangka Belitung">Bangka Belitung</option>
+                        <option value="Kalimantan Barat">Kalimantan Barat</option>
+                        <option value="Kalimantan Timur">Kalimantan Timur</option>
+                        <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                        <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                        <option value="Kalimantan Utara">Kalimantan Utara</option>
+                        <option value="Banten">Banten</option>
+                        <option value="DKI Jakarta">DKI Jakarta</option>
+                        <option value="Jawa Barat">Jawa Barat</option>
+                        <option value="Jawa Tengah">Jawa Tengah</option>
+                        <option value="DI Yogyakarta">DI Yogyakarta</option>
+                        <option value="Jawa Timur">Jawa Timur</option>
+                        <option value="Bali">Bali</option>
+                        <option value="NTT">NTT</option>
+                        <option value="NTB">NTB</option>
+                        <option value="Gorontalo">Gorontalo</option>
+                        <option value="Sulawesi Barat">Sulawesi Barat</option>
+                        <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                        <option value="Sulawesi Utara">Sulawesi Utara</option>
+                        <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                        <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                        <option value="Maluku Utara">Maluku Utara</option>
+                        <option value="Maluku">Maluku</option>
+                        <option value="Papua">Papua</option>
+                        <option value="Papua Barat">Papua Barat</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Aktif</label></td>
+                <td>:</td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><p><b>DATA ORANG TUA</b></p></td>
+            </tr>
+            <tr>
+                <td><label for="kartu_keluarga">Nomor Kartu Keluarga</label></td>
+                <td>:</td>
+                <td><input type="text" id="kartu_keluarga" name="kartu_keluarga" required></td>
+            </tr>
+            <tr>
+                <td><label for="ayah_kandung">Nama Ayah Kandung</label></td>
+                <td>:</td>
+                <td><input type="text" id="ayah_kandung" name="ayah_kandung" required></td>
+            </tr>
+            <tr>
+                <td><label for="agama_ayah">Agama</label></td>
+                <td>:</td>
+                <td><select name="agama_ayah" id="agama_ayah" required>
+                    <option value="None">-</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="pekerjaan_ayah">Pekerjaan</label></td>
+                <td>:</td>
+                <td><input type="text" name="pekerjaan_ayah" id="pekerjaan_ayah" required></td>
+            </tr>
+            <tr>
+                <td><label for="ibu_kandung">Nama Ibu Kandung</label></td>
+                <td>:</td>
+                <td><input type="text" id="ibu_kandung" name="ibu_kandung" required></td>
+            </tr>
+            <tr>
+                <td><label for="agama_ibu">Agama</label></td>
+                <td>:</td>
+                <td><select name="agama_ibu" id="agama_ibu" required>
+                    <option value="None">-</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="pekerjaan_ibu">Pekerjaan</label></td>
+                <td>:</td>
+                <td><input type="text" name="pekerjaan_ibu" id="pekerjaan_ibu" required></td>
+            </tr>
+            <tr>
+                <td><label for="alamat_ortu">Alamat Orang Tua</label></td>
+                <td>:</td>
+                <td><input type="text" id="alamat_ortu" name="alamat_ortu" required></td>
+            </tr>
+            <tr>
+                <td style="padding-top: 10px;" align="center" colspan="3">
+                    <input style="background-color: rgb(64, 14, 245);
+                     color: white; 
+                     font-size: large;" 
+                    type="submit" name="submit" value="Kirim">
+                </td>
+            </tr>
+            
+        </table>
+
+    </form>
+</body>
+</html>
