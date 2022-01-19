@@ -65,7 +65,7 @@
 
                 if(isset($_POST['name']) || isset($_POST['email']) || isset($_POST['password']) || isset($_POST['re_password'])){
                     $Tamu = fopen("Buku_Tamu.txt", "r");
-                    echo fread($Tamu, filesize("Buku_Tamu.txt"));
+                    echo fread($Tamu, filesize("login.txt"));
                 }
             ?>
         </div>
